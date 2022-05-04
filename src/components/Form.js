@@ -7,7 +7,13 @@ function Form() {
       <button className="todo-button" type="submit">
         Submit
       </button>
-      <div></div>
+      <div>
+        <select>
+          <option>All</option>
+          <option>Completed</option>
+          <option>Uncompleted</option>
+        </select>
+      </div>
     </form>
   );
 }
