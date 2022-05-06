@@ -1,6 +1,9 @@
 import React from "react";
 
 function Form() {
+  function inputTextHandler(input) {
+    console.log(input);
+  }
   return (
     <form>
       <input type="text" className="todo-input"></input>
