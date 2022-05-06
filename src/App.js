@@ -10,6 +10,7 @@ function App() {
         <h2>ToDo List</h2>
       </header>
       <Form />
+      <TodoList />
     </div>
   );
 }
