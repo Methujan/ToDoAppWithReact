@@ -7,10 +7,8 @@ function App() {
   const [inputText, setInputText] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>ToDo List</h2>
-      </header>
-      <Form />
+      <h2>ToDo List {inputText}</h2>
+      <Form setInputText={setInputText} />
       <TodoList />
     </div>
   );

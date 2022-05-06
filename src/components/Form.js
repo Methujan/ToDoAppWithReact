@@ -1,12 +1,18 @@
 import React from "react";
 
-function Form() {
+function Form({ setInputText }) {
   function inputTextHandler(input) {
-    console.log(input);
+    console.log(input.target.value);
+    setInputText(input.target.value);
   }
+
   return (
     <form>
-      <input type="text" className="todo-input"></input>
+      <input
+        onChange={inputTextHandler}
+        type="text"
+        className="todo-input"
+      ></input>
       <button className="todo-button" type="submit">
         Submit
       </button>
