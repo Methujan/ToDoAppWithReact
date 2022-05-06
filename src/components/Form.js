@@ -6,6 +6,10 @@ function Form({ setInputText }) {
     setInputText(input.target.value);
   }
 
+  function submitTodoHandler(e) {
+    e.preventDefault();
+  }
+
   return (
     <form>
       <input
@@ -13,7 +17,7 @@ function Form({ setInputText }) {
         type="text"
         className="todo-input"
       ></input>
-      <button className="todo-button" type="submit">
+      <button onClick={submitTodoHandler} className="todo-button" type="submit">
         Submit
       </button>
       <div>
