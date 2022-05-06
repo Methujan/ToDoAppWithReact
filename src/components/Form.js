@@ -12,11 +12,13 @@ function Form({ setInputText, todos, setTodos, inputText }) {
       ...todos,
       { text: inputText, completed: false, id: Math.random() * 1000 },
     ]);
+    setInputText("");
   }
 
   return (
     <form>
       <input
+        value={inputText}
         onChange={inputTextHandler}
         type="text"
         className="todo-input"
