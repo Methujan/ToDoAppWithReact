@@ -8,7 +8,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   return (
     <div className="App">
-      <h2>ToDo List {inputText}</h2>
+      <h2>ToDo List</h2>
       <Form
         todos={todos}
         setTodos={setTodos}
