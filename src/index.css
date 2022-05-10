@@ -14,5 +14,9 @@ code {
 
 .todo-container{
   display: flex;
-  justify-content:space-evenly;
+  
+}
+
+.todo-list{
+  padding: 0 5px 0 5px ;
 }

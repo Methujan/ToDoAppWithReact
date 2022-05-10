@@ -4,7 +4,7 @@ export default function Todo({ text }) {
   console.log("text", text);
   return (
     <div className="todo-container">
-      <li>{text}</li>
+      <li className="todo-list">{text}</li>
       <button></button>
       <button></button>
     </div>
